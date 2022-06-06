@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    margin: 0 auto;
+    padding: 0 10%;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball01.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home.svg),url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/ball02.svg);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position: -220px 600px,right top,88vw 273vh;
+    background-size: auto,auto,auto;
+    
+}
+.header, .main{
+    max-width: 80%;
+    margin: 0 auto;
+}   
+.top a{
+    padding: 26px 17px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #56C4C5;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 18px;;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 9px;
+}
+.logo img{
+    width: 218px;
+}
+.fee{
+    display: inline-block;
+    width: 128px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    padding: 8px;
+    border-radius:50px;
+}
+.navbar .fee{
+    background: #FF5D50;  
+}
+.navbar .fee:hover{
+    background: #53E1E3;  
+}
+@media (max-width:768px) {
+    .wrap{
+        padding: 0 20px;
+        background-image: none;
+    }
+    .navbar{
+        padding: 24px 0;
+    }
+    .logo img{
+        width: 80% ;
+    }
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.banner-text{
+    width: 451px;
+    height: 219px;
+    line-height: 1.5;
+}
+.banner-text h2{
+    color:#56C4C5;
+    font-size: 18px;
+}
+.banner-text p{
+    font-size: 48px;
+}
+.banner-text h3{
+    font-size: 20px;
+}
+.banner-image{
+    width: 532px;
+}
+@media (max-width:768px) {
+    .banner-text p{
+        font-size: 36px;
+    }
+    .banner{
+        background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/bg_home_sm.svg);
+        background-repeat: no-repeat;
+        background-position: 0 260px;
+        background-size: 100% ;
+    }
+}
+.platform{
+    margin-top: 217px;
+    margin-bottom: 100px;
+}
+.title{
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 46px;
+}
+.textcenter{
+    text-align: center;
+}
+.textbolder{
+    font-weight: bolder;
+}
+.platformlist{
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.socialmedia img{
+    width: 90px;
+}
+.mediatext{
+    color:#747474;
+    font-size: 16px;
+    line-height: 24px;
+}
+.medianame{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 24px 0;
+}
+.description{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 48px;
+}
+.charatercard{
+    display: flex;
+    justify-content: space-between;    
+    flex-wrap: wrap;
+}
+.list{
+    width: 260px;
+    height: 388px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px  #00000014;
+    margin-bottom: 15px;
+}
+.list img{
+    width: 260px;
+    border-radius: 12px 12px 0 0;
+}
+.charatername{
+    color:#56C4C5;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 16px 0
+}
+.charatertext{
+    font-size: 16px;
+    line-height: 24px;
+}
+@media (max-width:768px) {
+    .charatercard{
+        justify-content: center;
+    }
+    
+}
+.function{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.functionlist{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 507px;
+}
+.function li{
+    width: 230px;
+    height: 280px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px 2px #00000014;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 32px;
+    margin-bottom: 28px;
+}
+.icon{
+    width: 86px;
+    height: 86px;
+    border-radius: 100px;
+    padding: 17px;
+    box-shadow: 0 2px 12px 2px #00000014;
+    }
+
+.function h4{
+    font-size: 18px;
+}
+.function p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.introduce{
+    max-width: 500px;
+}
+.introduce .fee{
+    background-color: #56C4C5;
+}
+.introduce .fee:hover{
+    background-color: #B8E6E7;
+}
+.introduce p{
+    font-size: 18px;
+    line-height: 26px;
+    padding: 16px 0 24px 0;
+}
+@media (max-width:768px) {
+    .function{
+        flex-direction: column-reverse;
+    }
+    .introduce .title{
+        text-align: center;
+    }
+    .introduce p{
+        text-align: center;
+    }
+    .introduce{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .functionlist{
+        justify-content: center;
+    }
+}
+.cmtbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.commentcard{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 352px;
+    height: 304px;
+    margin-bottom: 20px;
+    
+}
+.commentcard .photo{
+    position:absolute;
+    top:0px;
+    left: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+}
+.commentblock{
+    border-radius: 12px;
+    box-shadow: 0 2px 12px 0px #00000014;
+    height: 248px;
+    padding: 48px 32px 24px 36px;
+}
+.commentblock p{
+    font-size: 16px;
+    line-height: 24px;
+}
+.commentperson{
+    display: flex;
+    justify-content: space-between;
+}
+.company{
+    margin: 16px 0 8px 0;
+}
+@media (max-width:768px) {
+    .disappear{
+        display: none;
+    }
+}
+.roller{
+    margin:20px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    gap:10px
+}
+.rollericon{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #DDDDDD;
+    border-radius: 50px;
+}
+.currenticon{
+    display: block;
+    width: 16px;
+    height: 10px;
+    border-radius: 50px;
+    background: #FFD153;
+}
+.rollericon:hover{
+    background: #FFD153;
+}
+.footer{
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/home_footer.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: auto 503px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px red;
+    height:500px ;
+}
+
+.footer .fee {
+    background-color: #56C4C5;
+    margin-top: 50px;
+}
+.footer .fee:hover{
+    background-color: #B8E6E7;
+
+}
+@media (max-width:768px) {
+    .title{
+        font-size: 24px;
+    }
+}
+
+.d-flex{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 300px 0 200px 0;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    background: #F5F5F5;
+
+}
+.copyright p{
+    padding: 16px 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
